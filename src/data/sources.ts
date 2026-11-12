@@ -39,10 +39,10 @@ export const sourceGroups: SourceGroup[] = [
   },
   {
     title: 'Image credits',
-    description: 'Artwork images are linked from Wikimedia Commons and credited by collection in the Visual Art gallery.',
+    description: 'Locally hosted images are credited beside the works and cultural essays where they appear.',
     items: [
       'Image URLs are stored with each artwork in src/data/artworks.ts.',
-      'Replace a URL with a local file in public/images/ if your course requires locally hosted images.',
+      'Early Modern and nineteenth-century cultural images, the nineteenth-century gallery, and Personal Connections images are stored in public/images/.',
     ],
   },
   {

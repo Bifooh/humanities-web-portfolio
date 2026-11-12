@@ -1,4 +1,5 @@
 import { SectionIntro } from '../components/SectionIntro'
+import { CitedImage } from '../components/CitedImage'
 
 const paragraphs = [
   'Imagine standing in front of a painting and noticing that a tiny mirror in the background reflects people who are outside the main scene. That detail makes the painting feel like a real place that continues beyond its frame. Jan van Eyck’s The Arnolfini Portrait creates this experience, and its mirror is one of the details that interested me most. Many Renaissance artists explored ways to make people, spaces, and emotions feel more convincing. Their work developed in a culture that placed renewed importance on classical learning and human abilities. [1] Looking at these paintings helps me understand how artistic choices could express beliefs and ideas about the world. The Renaissance’s historical setting, religious beliefs, and artistic and technical innovations shaped European culture and offer a meaningful connection to my interest in software engineering.',
@@ -32,7 +33,11 @@ export function CulturalOverview() {
         />
         <article className="essay-longform">
           <p className="essay-dek">Culture, creativity, and belief—read through the details that make Renaissance art feel alive.</p>
-          {paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          {paragraphs.map((paragraph, index) => <div key={index}>
+            <p>{paragraph}</p>
+            {index === 1 && <CitedImage src="/images/mona-lisa.jpg" alt="Leonardo da Vinci’s Mona Lisa before a distant landscape" caption="Leonardo da Vinci, Mona Lisa (c. 1503–1519)" href="https://commons.wikimedia.org/wiki/File:Mona_Lisa.jpg" />}
+            {index === 3 && <CitedImage src="/images/school-of-athens.jpg" alt="Raphael’s philosophers gathered beneath Renaissance arches" caption="Raphael, The School of Athens (1509–1511)" href="https://commons.wikimedia.org/wiki/File:Raphael_School_of_Athens.jpg" />}
+          </div>)}
           <details className="citation-box">
             <summary className="mini-label">Citations & references</summary>
             <div className="reference-list">{references.map((reference) => <p key={reference}>{reference}</p>)}</div>

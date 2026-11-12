@@ -6,6 +6,8 @@ export type Essay = {
   excerpt: string
   image?: string
   imageAlt?: string
+  imageCredit?: string
+  imageSource?: string
   paragraphs: string[]
   references?: string[]
 }
@@ -17,6 +19,10 @@ export const essays: Essay[] = [
     topic: 'Personal Connections · political thought',
     eyebrow: 'Reflection 01',
     excerpt: 'Machiavelli’s ideas about fear, love, punishment, and generosity helped me compare the leadership styles of my mission president and Hyrum, who I have done unofficial work for.',
+    image: '/images/machiavelli.jpg',
+    imageAlt: 'Portrait of Niccolò Machiavelli',
+    imageCredit: 'Santi di Tito, Portrait of Niccolò Machiavelli.',
+    imageSource: 'https://commons.wikimedia.org/wiki/File:Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg',
     paragraphs: [
       'Machiavelli believed that an ideal leader would be both loved and feared, but in the real world that is very difficult to accomplish. Because of that, if a leader has to choose only one, he believed it is safer to be feared than loved (Machiavelli, The Prince, ch. 17). I liked what we discussed about punishment and how it can be used to create that fear without creating hatred. Punishment should be quick and happen all at once, so the bad experience is connected more to the bad action and not constantly to the leader. If punishment keeps coming little by little, people can start connecting their pain directly with the person in charge, and that can create hatred. Machiavelli also talks about generosity in almost the opposite way, because benefits are better when they are given little by little over time (Machiavelli, The Prince, ch. 8). This makes people continue noticing the good things the leader does instead of becoming used to one big reward and forgetting about it. To me, the main idea is that a leader has to be careful about how people connect both the bad and good things they experience with the leader.',
       'Two leaders I can compare from my own life are my mission president and Hyrum, who I have done unofficial work for. My mission president really taught by example, and that was probably one of the things I respected the most about him. He read and studied much more than I expected, he knew a lot about what was happening in the mission, and he even took the time to attend baptisms and special events with us. He also made decisions quickly and usually stuck with them, which made it feel like he really knew what he was doing. He knew the numbers and constantly asked us to push ourselves and become better missionaries. Hyrum is very different because he changes his mind a lot and sometimes seems insecure about what decision he should make. He also pushes us to work harder and faster, but a lot of the time it feels more like he wants the job done faster and wants more benefit from our work, instead of trying to help us improve. Both of them pushed the people under them, but the reason behind that pressure and the way they led felt very different to me.',
@@ -30,6 +36,10 @@ export const essays: Essay[] = [
     topic: 'Personal Connections · Shakespeare',
     eyebrow: 'Reflection 02',
     excerpt: 'Prospero’s decision to choose mercy over revenge helped me think about patience, forgiveness, and what it means to move forward instead of getting even.',
+    image: '/images/miranda-tempest.jpg',
+    imageAlt: 'Miranda looks toward the sea in John William Waterhouse’s painting inspired by The Tempest',
+    imageCredit: 'John William Waterhouse, Miranda (1916), inspired by The Tempest.',
+    imageSource: 'https://commons.wikimedia.org/wiki/File:Miranda_-_The_Tempest,_by_John_William_Waterhouse.jpg',
     paragraphs: [
       'In The Tempest, Shakespeare shows how justice can be necessary, but mercy can sometimes accomplish more than punishment or revenge. Prospero has a good reason to be angry because his brother Antonio betrayed him, took his position as Duke of Milan, and helped force Prospero and Miranda away. When Prospero finally has his enemies under his control on the island, he has the power to punish them for what they did. At first, it seems like he is trying to make them suffer and recognize the consequences of their actions. However, toward the end of the play, Prospero begins to choose mercy instead of continuing with revenge. One of the most important moments is when he says that “the rarer action is in virtue than in vengeance” (The Tempest, 5.1). He forgives Alonso and even Antonio, although Antonio does not show nearly as much regret for what he did. To me, Shakespeare shows that justice can help people recognize that something was wrong, but mercy is what allows people to leave the problem behind and actually move forward.',
       'I have experienced something similar in my own family with my sister Samara. There was a time when she was often mad at me, and sometimes she would refuse to give me things that I deserved or needed even when she could have helped me. It sometimes felt like she was doing it just because she was angry or because she wanted to make things more difficult for me. I could have easily responded by treating her the same way and refusing to help her whenever she needed something from me. In a way, that probably would have felt fair because I would only be giving her the same treatment that I was receiving. Instead, I usually continued treating her normally, being nice to her, and giving her things she needed when I could. It was not always easy, but over time I became much more patient instead of constantly trying to get even with her. Looking back, I think choosing not to return the same treatment was a form of mercy because I could recognize that something was unfair without needing to make her experience the same thing in return.',

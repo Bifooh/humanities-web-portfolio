@@ -12,7 +12,7 @@ export function EssayBlock({ essay, index }: EssayBlockProps) {
       <div className="essay-content">
         <p className="essay-eyebrow">{essay.eyebrow} <span>{essay.topic}</span></p>
         <h3>{essay.title}</h3>
-        {essay.image && <img className="essay-image" src={essay.image} alt={essay.imageAlt ?? ''} />}
+        {essay.image && <figure className="essay-figure"><img className="essay-image" src={asset(essay.image)} alt={essay.imageAlt ?? ''} /><figcaption>{essay.imageCredit} {essay.imageSource && <a href={essay.imageSource} target="_blank" rel="noreferrer">Image source ↗</a>}</figcaption></figure>}
         <p className="essay-excerpt">{essay.excerpt}</p>
         <details className="essay-reading">
           <summary>Read reflection <span aria-hidden="true">↗</span></summary>
@@ -30,3 +30,4 @@ export function EssayBlock({ essay, index }: EssayBlockProps) {
     </article>
   )
 }
+import { asset } from '../data/asset'
